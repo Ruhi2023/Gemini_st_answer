@@ -73,14 +73,3 @@ if st.checkbox("Delete files", value=False):
           os.remove(os.path.join(par, "file upload",f))
         except:
             st.write(f"Could not delete {f}") 
-"""
-par = os.getcwd()
-if not os.path.exists(os.path.join(par, "file upload")):
-    os.mkdir(os.path.join(par, "file upload"))
-if len(os.listdir(os.path.join(par, "file upload"))) != 0:
-  for f in os.listdir(os.path.join(par, "file upload")):
-    os.remove(os.path.join(par, "file upload",f))
-else:
-    st.write("No files in cache")
-
-"""
