@@ -35,7 +35,7 @@ genai.configure(api_key=gak)
 pr = st.text_input("Enter your prompt")
 use_img = st.checkbox("Work with images")
 
-
+# use st.session_state
 if use_img:
     uplad_files = st.file_uploader("Upload files", type=["png"], accept_multiple_files=True) 
     names = list(map(take_images, uplad_files))
